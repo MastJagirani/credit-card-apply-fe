@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Credit Card Application Frontend
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a frontend application for handling credit card applications. It is built with Next.js, TypeScript, and ShadCN UI. The application provides a multi-step form for users to submit their credit card application, validate their details, and interact with backend services for verification.
+
+## Features
+
+- Multi-step form for credit card application
+- Form validation using Zod and React Hook Form
+- Responsive UI components using ShadCN UI
+- Integration with backend API for verification
+- Error and success notifications
+- File upload support for bank statements
+- Date selection with a calendar component
+
+## Prerequisites
+
+- Node.js (LTS version recommended)
+- npm or yarn (package managers)
+- A code editor like Visual Studio Code
+
+## Folder Structure
+
+The project is organized into the following folders:
+
+```bash
+/components       # Reusable UI components (e.g., form fields, alerts)
+/app              # page.tsx and layout css
+/lib              # Utility functions and libraries (e.g., API calls)
+/types            # TypeScript types and interfaces
+```
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/MastJagirani/credit-card-apply-fe.git
+   cd credit-card-apply-fe
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Configure environment variables:**
+
+ since we have only 2 apis base url is directly configured in lib/api.ts
+
+## Development
+
+To start the development server, run:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the application for production, use:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+# or
+yarn start
+```
+## Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js**: Configured in `next.config.js`.
+- **TypeScript**: Configured in `tsconfig.json`.
+- **ESLint**: Linting rules are in `.eslintrc.js`.
 
-## Deploy on Vercel
+ 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 
