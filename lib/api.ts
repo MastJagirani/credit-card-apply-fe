@@ -1,6 +1,6 @@
-import { IdentityVerification } from '../types/identityVerification'; 
+import { IdentityVerification } from '../types/IdentityVerification'; 
 
-const baseUrl = 'http://localhost:8086/api/v1/credit-card';
+const baseUrl = 'http://localhost:8080/api/v1/credit-card';
 
 export async function postIdentityVerification(data: { fullName: string; emiratesId: string }): Promise<IdentityVerification> {
   const response = await fetch(baseUrl+'/identity-verification', {
